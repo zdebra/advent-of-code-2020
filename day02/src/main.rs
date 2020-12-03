@@ -9,8 +9,8 @@ fn main() {
     let args: Vec<String> = env::args().collect();
     let filename = &args[1];
 
-    let mut validCnt = 0;
-    let mut validPart2Cnt = 0;
+    let mut valid_cnt = 0;
+    let mut valid_part_2_cnt = 0;
     if let Ok(lines) = read_lines(filename) {
         for line in lines {
             let line = line.unwrap();
@@ -25,16 +25,16 @@ fn main() {
                 password.is_valid_part_two()
             );
             if password.is_valid() {
-                validCnt = validCnt + 1;
+                valid_cnt = valid_cnt + 1;
             }
             if password.is_valid_part_two() {
-                validPart2Cnt = validPart2Cnt + 1;
+                valid_part_2_cnt = valid_part_2_cnt + 1;
             }
         }
     }
 
-    println!("valid password cnt: {}", validCnt);
-    println!("valid password for part 2 cnt: {}", validPart2Cnt);
+    println!("valid password cnt: {}", valid_cnt);
+    println!("valid password for part 2 cnt: {}", valid_part_2_cnt);
 }
 
 fn read_lines<P>(filename: P) -> io::Result<io::Lines<io::BufReader<File>>>
