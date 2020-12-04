@@ -18,11 +18,21 @@ test = false
 bench = false
 path="day02/src/main.rs"
 
+[[bin]]
+name= "day03"
+test = false
+bench = false
+path="day03/src/main.rs"
+
+
 [workspace]
 
 members = [
     "day01",
     "day02",
+    "day03"
 ]
 
 [dependencies]
+
+array2d = "0.2.1"
