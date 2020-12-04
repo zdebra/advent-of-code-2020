@@ -24,15 +24,23 @@ test = false
 bench = false
 path="day03/src/main.rs"
 
+[[bin]]
+name= "day04"
+test = false
+bench = false
+path="day04/src/main.rs"
 
 [workspace]
 
 members = [
     "day01",
     "day02",
-    "day03"
+    "day03",
+    "day04"
 ]
 
 [dependencies]
 
 array2d = "0.2.1"
+simple-error = "0.1.9"
+regex = "1.1.0"
