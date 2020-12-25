@@ -3,7 +3,7 @@ use std::fs::File;
 use std::io::{self, BufRead};
 
 fn main() {
-    println!("Hello, world from day 9!");
+    println!("Hello, world from day 10!");
     let args: Vec<String> = env::args().collect();
     let filename = &args[1];
     let file = File::open(filename).expect("open failed");
