@@ -72,6 +72,13 @@ test = false
 bench = false
 path="day11/src/main.rs"
 
+
+[[bin]]
+name= "day12"
+test = false
+bench = false
+path="day12/src/main.rs"
+
 [workspace]
 
 members = [
@@ -86,6 +93,7 @@ members = [
     "day09",
     "day10",
     "day11",
+    "day12",
 ]
 
 [dependencies]
